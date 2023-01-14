@@ -22,8 +22,8 @@ class BishopBlackTest {
         Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertThat(rsl).isEqualTo(expected);
     }
-    @Test
 
+    @Test
     public void whenCopyIsNotDiagonal() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
